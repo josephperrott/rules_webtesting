@@ -41,10 +41,8 @@ def _platform_metadata_impl(ctx):
         ],
     )
 
-    files = [f for f in ctx.files.files if " " not in f.short_path]
-
     return [
-        DefaultInfo(runfiles = ctx.runfiles(files = files)),
+        DefaultInfo(runfiles = ctx.runfiles(files = ctx.files.files)),
         WebTestInfo(metadata = ctx.outputs.web_test_metadata),
     ]
 
