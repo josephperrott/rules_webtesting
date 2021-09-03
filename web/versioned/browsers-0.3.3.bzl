@@ -41,8 +41,8 @@ def com_saucelabs_sauce_connect():
             "https://saucelabs.com/downloads/sc-4.5.4-linux.tar.gz",
         ],
         named_files = {
-                                  "SAUCE_CONNECT": "bin/sc",
-                              },
+            "SAUCE_CONNECT": "bin/sc",
+        },
     )
 
     platform_archive(
@@ -53,8 +53,8 @@ def com_saucelabs_sauce_connect():
             "https://saucelabs.com/downloads/sc-4.5.4-osx.zip",
         ],
         named_files = {
-                                  "SAUCE_CONNECT": "bin/sc",
-                              },
+            "SAUCE_CONNECT": "bin/sc",
+        },
     )
 
     platform_archive(
@@ -66,8 +66,8 @@ def com_saucelabs_sauce_connect():
             "https://saucelabs.com/downloads/sc-4.5.4-win32.zip",
         ],
         named_files = {
-                                                        "SAUCE_CONNECT": "bin/sc.exe",
-                                                    }
+            "SAUCE_CONNECT": "bin/sc.exe",
+        },
     )
 
 # To update Chromium, do the following:
@@ -87,8 +87,8 @@ def org_chromium_chromedriver():
             "https://storage.googleapis.com/dev-infra-mirror/chromium/902390/chromedriver_linux64.zip",
         ],
         named_files = {
-                                  "CHROMEDRIVER": "chromedriver_linux64/chromedriver",
-                              },
+            "CHROMEDRIVER": "chromedriver_linux64/chromedriver",
+        },
     )
 
     platform_archive(
@@ -100,8 +100,8 @@ def org_chromium_chromedriver():
             "https://storage.googleapis.com/dev-infra-mirror/chromium/902390/chromedriver_mac_x64.zip",
         ],
         named_files = {
-                                  "CHROMEDRIVER": "chromedriver_mac64/chromedriver",
-                              },
+            "CHROMEDRIVER": "chromedriver_mac64/chromedriver",
+        },
     )
 
     platform_archive(
@@ -113,8 +113,8 @@ def org_chromium_chromedriver():
             "https://storage.googleapis.com/dev-infra-mirror/chromium/902390/chromedriver_mac_arm64.zip",
         ],
         named_files = {
-                                  "CHROMEDRIVER": "chromedriver_mac64/chromedriver",
-                              },
+            "CHROMEDRIVER": "chromedriver_mac64/chromedriver",
+        },
     )
 
     platform_archive(
@@ -126,8 +126,8 @@ def org_chromium_chromedriver():
             "https://storage.googleapis.com/dev-infra-mirror/chromium/902390/chromedriver_win32.zip",
         ],
         named_files = {
-                                  "CHROMEDRIVER": "chromedriver_win32/chromedriver.exe",
-                              },
+            "CHROMEDRIVER": "chromedriver_win32/chromedriver.exe",
+        },
     )
 
 def org_chromium_chromium():
@@ -141,8 +141,8 @@ def org_chromium_chromium():
             "https://storage.googleapis.com/dev-infra-mirror/chromium/902390/chrome-linux.zip",
         ],
         named_files = {
-                                  "CHROMIUM": "chrome-linux/chrome",
-                              },
+            "CHROMIUM": "chrome-linux/chrome",
+        },
     )
 
     platform_archive(
@@ -155,8 +155,8 @@ def org_chromium_chromium():
             "https://storage.googleapis.com/dev-infra-mirror/chromium/902390/chrome-mac_x64.zip",
         ],
         named_files = {
-                                  "CHROMIUM": "chrome-mac/Chromium.app/Contents/MacOS/Chromium",
-                              },
+            "CHROMIUM": "chrome-mac/Chromium.app/Contents/MacOS/Chromium",
+        },
     )
 
     platform_archive(
@@ -169,22 +169,22 @@ def org_chromium_chromium():
             "https://storage.googleapis.com/dev-infra-mirror/chromium/902390/chrome-mac_arm64.zip",
         ],
         named_files = {
-                                  "CHROMIUM": "chrome-mac/Chromium.app/Contents/MacOS/Chromium",
-                              },
+            "CHROMIUM": "chrome-mac/Chromium.app/Contents/MacOS/Chromium",
+        },
     )
 
     platform_archive(
         name = "org_chromium_chromium_windows_x64",
-         licenses = ["notice"],  # BSD 3-clause (maybe more?)
-         sha256 = "8919cd2f8a4676af4acc50d022b6a946a5b21a5fec4e078b0ebb0c8e18f1ce90",
-         # 94.0.4578.0
-         urls = [
-             "https://storage.googleapis.com/chromium-browser-snapshots/Win/902390/chrome-win.zip",
-             "https://storage.googleapis.com/dev-infra-mirror/chromium/902390/chrome-win.zip",
-         ],
-         named_files = {
-                                   "CHROMIUM": "chrome-win/chrome.exe",
-                               },
+        licenses = ["notice"],  # BSD 3-clause (maybe more?)
+        sha256 = "8919cd2f8a4676af4acc50d022b6a946a5b21a5fec4e078b0ebb0c8e18f1ce90",
+        # 94.0.4578.0
+        urls = [
+            "https://storage.googleapis.com/chromium-browser-snapshots/Win/902390/chrome-win.zip",
+            "https://storage.googleapis.com/dev-infra-mirror/chromium/902390/chrome-win.zip",
+        ],
+        named_files = {
+            "CHROMIUM": "chrome-win/chrome.exe",
+        },
     )
 
 def org_mozilla_firefox():
@@ -198,8 +198,8 @@ def org_mozilla_firefox():
             "https://storage.googleapis.com/dev-infra-mirror/mozilla/firefox/firefox-90.0.1.tar.bz2",
         ],
         named_files = {
-                                  "FIREFOX": "firefox/firefox",
-                              },
+            "FIREFOX": "firefox/firefox",
+        },
     )
 
     platform_archive(
@@ -213,8 +213,8 @@ def org_mozilla_firefox():
             "https://storage.googleapis.com/dev-infra-mirror/mozilla/firefox/Firefox%2090.0.1.dmg",
         ],
         named_files = {
-                                  "FIREFOX": "Firefox.app/Contents/MacOS/firefox",
-                              },
+            "FIREFOX": "Firefox.app/Contents/MacOS/firefox",
+        },
     )
 
     platform_archive(
@@ -230,10 +230,9 @@ def org_mozilla_firefox():
             "https://storage.googleapis.com/dev-infra-mirror/mozilla/firefox/Firefox%2090.0.1.dmg",
         ],
         named_files = {
-                                  "FIREFOX": "Firefox.app/Contents/MacOS/firefox",
-                              },
+            "FIREFOX": "Firefox.app/Contents/MacOS/firefox",
+        },
     )
-
 
 def org_mozilla_geckodriver():
     platform_archive(
@@ -246,8 +245,8 @@ def org_mozilla_geckodriver():
             "https://storage.googleapis.com/dev-infra-mirror/mozilla/geckodriver/0.29.1/geckodriver-v0.29.1-linux64.tar.gz",
         ],
         named_files = {
-                              "GECKODRIVER": "geckodriver",
-                          },
+            "GECKODRIVER": "geckodriver",
+        },
     )
 
     platform_archive(
@@ -260,8 +259,8 @@ def org_mozilla_geckodriver():
             "https://storage.googleapis.com/dev-infra-mirror/mozilla/geckodriver/0.29.1/geckodriver-v0.29.1-macos.tar.gz",
         ],
         named_files = {
-                              "GECKODRIVER": "geckodriver",
-                          },
+            "GECKODRIVER": "geckodriver",
+        },
     )
 
     platform_archive(
@@ -274,6 +273,6 @@ def org_mozilla_geckodriver():
             "https://storage.googleapis.com/dev-infra-mirror/mozilla/geckodriver/0.29.1/geckodriver-v0.29.1-macos-aarch64.tar.gz",
         ],
         named_files = {
-                              "GECKODRIVER": "geckodriver",
-                          },
+            "GECKODRIVER": "geckodriver",
+        },
     )

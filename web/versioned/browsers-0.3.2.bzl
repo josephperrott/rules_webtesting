@@ -41,8 +41,8 @@ def com_saucelabs_sauce_connect():
             "https://saucelabs.com/downloads/sc-4.5.4-linux.tar.gz",
         ],
         named_files = {
-                                  "SAUCE_CONNECT": "bin/sc",
-                              },
+            "SAUCE_CONNECT": "bin/sc",
+        },
     )
 
     platform_archive(
@@ -53,8 +53,8 @@ def com_saucelabs_sauce_connect():
             "https://saucelabs.com/downloads/sc-4.5.4-osx.zip",
         ],
         named_files = {
-                                  "SAUCE_CONNECT": "bin/sc",
-                              },
+            "SAUCE_CONNECT": "bin/sc",
+        },
     )
 
     platform_archive(
@@ -66,8 +66,8 @@ def com_saucelabs_sauce_connect():
             "https://saucelabs.com/downloads/sc-4.5.4-win32.zip",
         ],
         named_files = {
-                                                        "SAUCE_CONNECT": "bin/sc.exe",
-                                                    }
+            "SAUCE_CONNECT": "bin/sc.exe",
+        },
     )
 
 # To update Chromium, do the following:
@@ -87,8 +87,8 @@ def org_chromium_chromedriver():
             "https://commondatastorage.googleapis.com/chromium-browser-snapshots/Linux_x64/870763/chromedriver_linux64.zip",
         ],
         named_files = {
-                                  "CHROMEDRIVER": "chromedriver_linux64/chromedriver",
-                              },
+            "CHROMEDRIVER": "chromedriver_linux64/chromedriver",
+        },
     )
 
     platform_archive(
@@ -99,8 +99,8 @@ def org_chromium_chromedriver():
             "https://commondatastorage.googleapis.com/chromium-browser-snapshots/Mac/870776/chromedriver_mac64.zip",
         ],
         named_files = {
-                                  "CHROMEDRIVER": "chromedriver_mac64/chromedriver",
-                              },
+            "CHROMEDRIVER": "chromedriver_mac64/chromedriver",
+        },
     )
 
     platform_archive(
@@ -112,8 +112,8 @@ def org_chromium_chromedriver():
             "https://commondatastorage.googleapis.com/chromium-browser-snapshots/Win/870788/chromedriver_win32.zip",
         ],
         named_files = {
-                                  "CHROMEDRIVER": "chromedriver_win32/chromedriver.exe",
-                              },
+            "CHROMEDRIVER": "chromedriver_win32/chromedriver.exe",
+        },
     )
 
 def org_chromium_chromium():
@@ -125,33 +125,33 @@ def org_chromium_chromium():
             "https://commondatastorage.googleapis.com/chromium-browser-snapshots/Linux_x64/870763/chrome-linux.zip",
         ],
         named_files = {
-                                  "CHROMIUM": "chrome-linux/chrome",
-                              },
+            "CHROMIUM": "chrome-linux/chrome",
+        },
     )
 
     platform_archive(
-         name = "org_chromium_chromium_macos_x64",
-         licenses = ["notice"],  # BSD 3-clause (maybe more?)
-         sha256 = "667be4bd866e14b38fdb1b4d1f4c04b4f86e1af710082c30f78c3c5b52e5a34d",
-         urls = [
-             "https://commondatastorage.googleapis.com/chromium-browser-snapshots/Mac/870776/chrome-mac.zip",
-         ],
-         named_files = {
-                                  "CHROMIUM": "chrome-mac/Chromium.app/Contents/MacOS/Chromium",
-                              },
+        name = "org_chromium_chromium_macos_x64",
+        licenses = ["notice"],  # BSD 3-clause (maybe more?)
+        sha256 = "667be4bd866e14b38fdb1b4d1f4c04b4f86e1af710082c30f78c3c5b52e5a34d",
+        urls = [
+            "https://commondatastorage.googleapis.com/chromium-browser-snapshots/Mac/870776/chrome-mac.zip",
+        ],
+        named_files = {
+            "CHROMIUM": "chrome-mac/Chromium.app/Contents/MacOS/Chromium",
+        },
     )
 
     platform_archive(
         name = "org_chromium_chromium_windows_x64",
-         licenses = ["notice"],  # BSD 3-clause (maybe more?)
-         sha256 =
-           "c0ef527ab7e4776b43da164b96969350cc87f1d18de2f6dfc6b74781092fcce5",
-         urls = [
-             "https://commondatastorage.googleapis.com/chromium-browser-snapshots/Win/870788/chrome-win.zip",
-         ],
-         named_files = {
-                                   "CHROMIUM": "chrome-win/chrome.exe",
-                               },
+        licenses = ["notice"],  # BSD 3-clause (maybe more?)
+        sha256 =
+            "c0ef527ab7e4776b43da164b96969350cc87f1d18de2f6dfc6b74781092fcce5",
+        urls = [
+            "https://commondatastorage.googleapis.com/chromium-browser-snapshots/Win/870788/chrome-win.zip",
+        ],
+        named_files = {
+            "CHROMIUM": "chrome-win/chrome.exe",
+        },
     )
 
 def org_mozilla_firefox():
@@ -164,8 +164,8 @@ def org_mozilla_firefox():
             "https://ftp.mozilla.org/pub/firefox/releases/68.0.2/linux-x86_64/en-US/firefox-68.0.2.tar.bz2",
         ],
         named_files = {
-                                  "FIREFOX": "firefox/firefox",
-                              },
+            "FIREFOX": "firefox/firefox",
+        },
     )
 
     platform_archive(
@@ -177,8 +177,8 @@ def org_mozilla_firefox():
             "https://ftp.mozilla.org/pub/firefox/releases/68.0.2/mac/en-US/Firefox%2068.0.2.dmg",
         ],
         named_files = {
-                                  "FIREFOX": "Firefox.app/Contents/MacOS/firefox",
-                              },
+            "FIREFOX": "Firefox.app/Contents/MacOS/firefox",
+        },
     )
 
 def org_mozilla_geckodriver():
@@ -191,8 +191,8 @@ def org_mozilla_geckodriver():
             "https://github.com/mozilla/geckodriver/releases/download/v0.24.0/geckodriver-v0.24.0-linux64.tar.gz",
         ],
         named_files = {
-                              "GECKODRIVER": "geckodriver",
-                          },
+            "GECKODRIVER": "geckodriver",
+        },
     )
 
     platform_archive(
@@ -204,6 +204,6 @@ def org_mozilla_geckodriver():
             "https://github.com/mozilla/geckodriver/releases/download/v0.26.0/geckodriver-v0.26.0-macos.tar.gz",
         ],
         named_files = {
-                              "GECKODRIVER": "geckodriver",
-                          },
+            "GECKODRIVER": "geckodriver",
+        },
     )

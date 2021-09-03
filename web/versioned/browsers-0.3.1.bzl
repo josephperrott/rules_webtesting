@@ -41,8 +41,8 @@ def com_saucelabs_sauce_connect():
             "https://saucelabs.com/downloads/sc-4.5.3-linux.tar.gz",
         ],
         named_files = {
-                                          "SAUCE_CONNECT": "bin/sc",
-                                      },
+            "SAUCE_CONNECT": "bin/sc",
+        },
     )
 
     platform_archive(
@@ -53,8 +53,8 @@ def com_saucelabs_sauce_connect():
             "https://saucelabs.com/downloads/sc-4.5.3-osx.zip",
         ],
         named_files = {
-                                          "SAUCE_CONNECT": "bin/sc",
-                                      },
+            "SAUCE_CONNECT": "bin/sc",
+        },
     )
 
     platform_archive(
@@ -66,8 +66,8 @@ def com_saucelabs_sauce_connect():
             "https://saucelabs.com/downloads/sc-4.5.3-win32.zip",
         ],
         named_files = {
-                                                        "SAUCE_CONNECT": "bin/sc.exe",
-                                                    }
+            "SAUCE_CONNECT": "bin/sc.exe",
+        },
     )
 
 def org_chromium_chromedriver():
@@ -80,8 +80,8 @@ def org_chromium_chromedriver():
             "https://chromedriver.storage.googleapis.com/72.0.3626.69/chromedriver_linux64.zip",
         ],
         named_files = {
-                                          "CHROMEDRIVER": "chromedriver_linux64/chromedriver",
-                                      },
+            "CHROMEDRIVER": "chromedriver_linux64/chromedriver",
+        },
     )
 
     platform_archive(
@@ -93,8 +93,8 @@ def org_chromium_chromedriver():
             "https://chromedriver.storage.googleapis.com/72.0.3626.69/chromedriver_mac64.zip",
         ],
         named_files = {
-                                          "CHROMEDRIVER": "chromedriver_mac64/chromedriver",
-                                      },
+            "CHROMEDRIVER": "chromedriver_mac64/chromedriver",
+        },
     )
 
     platform_archive(
@@ -106,8 +106,8 @@ def org_chromium_chromedriver():
             "https://chromedriver.storage.googleapis.com/72.0.3626.69/chromedriver_win32.zip",
         ],
         named_files = {
-                                          "CHROMEDRIVER": "chromedriver_win32/chromedriver.exe",
-                                      },
+            "CHROMEDRIVER": "chromedriver_win32/chromedriver.exe",
+        },
     )
 
 def org_chromium_chromium():
@@ -120,8 +120,8 @@ def org_chromium_chromium():
             "https://commondatastorage.googleapis.com/chromium-browser-snapshots/Linux_x64/612434/chrome-linux.zip",
         ],
         named_files = {
-                                          "CHROMIUM": "chrome-linux/chrome",
-                                      },
+            "CHROMIUM": "chrome-linux/chrome",
+        },
     )
 
     platform_archive(
@@ -133,8 +133,8 @@ def org_chromium_chromium():
             "https://commondatastorage.googleapis.com/chromium-browser-snapshots/Mac/612398/chrome-mac.zip",
         ],
         named_files = {
-                                         "CHROMIUM": "chrome-mac/Chromium.app/Contents/MacOS/Chromium",
-                                     },
+            "CHROMIUM": "chrome-mac/Chromium.app/Contents/MacOS/Chromium",
+        },
     )
 
     platform_archive(
@@ -146,8 +146,8 @@ def org_chromium_chromium():
             "https://commondatastorage.googleapis.com/chromium-browser-snapshots/Win/612432/chrome-win.zip",
         ],
         named_files = {
-                                           "CHROMIUM": "chrome-win/chrome.exe",
-                                       },
+            "CHROMIUM": "chrome-win/chrome.exe",
+        },
     )
 
 def org_mozilla_firefox():
@@ -160,8 +160,8 @@ def org_mozilla_firefox():
             "https://ftp.mozilla.org/pub/firefox/releases/65.0.1/linux-x86_64/en-US/firefox-65.0.1.tar.bz2",
         ],
         named_files = {
-                                          "FIREFOX": "firefox/firefox",
-                                      },
+            "FIREFOX": "firefox/firefox",
+        },
     )
 
     platform_archive(
@@ -173,8 +173,8 @@ def org_mozilla_firefox():
             "https://ftp.mozilla.org/pub/firefox/releases/65.0.1/mac/en-US/Firefox%2065.0.1.dmg",
         ],
         named_files = {
-                                          "FIREFOX": "Firefox.app/Contents/MacOS/firefox",
-                                      },
+            "FIREFOX": "Firefox.app/Contents/MacOS/firefox",
+        },
     )
 
 def org_mozilla_geckodriver():
@@ -187,8 +187,8 @@ def org_mozilla_geckodriver():
             "https://github.com/mozilla/geckodriver/releases/download/v0.24.0/geckodriver-v0.24.0-linux64.tar.gz",
         ],
         named_files = {
-                                      "GECKODRIVER": "geckodriver",
-                                  },
+            "GECKODRIVER": "geckodriver",
+        },
     )
 
     platform_archive(
@@ -200,6 +200,6 @@ def org_mozilla_geckodriver():
             "https://github.com/mozilla/geckodriver/releases/download/v0.24.0/geckodriver-v0.24.0-macos.tar.gz",
         ],
         named_files = {
-                                      "GECKODRIVER": "geckodriver",
-                                  },
+            "GECKODRIVER": "geckodriver",
+        },
     )

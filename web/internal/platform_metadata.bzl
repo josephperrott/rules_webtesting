@@ -21,7 +21,6 @@ def _label_to_manifest_path(label):
         return "%s/%s" % (label.workspace_name, label.package)
     return label.workspace_name
 
-
 def _platform_metadata_impl(ctx):
     """Implementation of the `platform_metadata` rule."""
     named_files = {}
@@ -42,7 +41,7 @@ def _platform_metadata_impl(ctx):
         ],
     )
 
-    files = [f for f in ctx.files.files if " "not in f.short_path]
+    files = [f for f in ctx.files.files if " " not in f.short_path]
 
     return [
         DefaultInfo(runfiles = ctx.runfiles(files = files)),
