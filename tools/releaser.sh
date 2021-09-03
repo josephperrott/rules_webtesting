@@ -23,6 +23,12 @@ bazel build -c opt --stamp \
     //go/wtl/main
 
 bazel build -c opt --stamp \
+    --platforms=@io_bazel_rules_go//go/toolchain:darwin_arm64 \
+    //go/metadata/main \
+    //go/wsl/main \
+    //go/wtl/main
+
+bazel build -c opt --stamp \
     --platforms=@io_bazel_rules_go//go/toolchain:linux_amd64 \
     //go/metadata/main \
     //go/wsl/main \
