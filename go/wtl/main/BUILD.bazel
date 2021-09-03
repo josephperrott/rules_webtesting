@@ -1,4 +1,4 @@
-# Copyright 2017 Google Inc.
+# Copyright 2019 Google Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,24 +14,16 @@
 #
 ################################################################################
 #
-load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library")
-
 licenses(["notice"])  # Apache 2.0
 
-go_library(
-    name = "go_default_library",
-    srcs = ["main.go"],
-    importpath = "github.com/bazelbuild/rules_webtesting/go/wtl/main",
-    visibility = ["//go/wtl:__subpackages__"],
-    deps = [
-        "//go/wtl:go_default_library",
-        "//go/wtl/diagnostics:go_default_library",
-    ],
-)
-
-go_binary(
+alias(
     name = "main",
-    testonly = True,
-    embed = [":go_default_library"],
+    actual  = select({
+        "//common/conditions:linux_x64": "linux_amd64_pure_stripped/main",
+        "//common/conditions:macos_x64": "darwin_amd64_pure_stripped/main",
+        "//common/conditions:macos_arm64": "darwin_arm64_pure_stripped/main",
+        "//common/conditions:windows_x64": "windows_amd64_pure_stripped/main.exe",
+    }),
     visibility = ["//visibility:public"],
+    testonly = True,
 )
